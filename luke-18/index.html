@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Luke 18 · Spirit &amp; Truth</title>
+<meta name="description" content="Coffee and the Word: a short guide through Luke 18:9–14.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap">
+<style>
+:root{
+  --bg:#f8f7f4; --paper:#ffffff; --ink:#22211f; --muted:#6d6a64; --line:#e3e0da;
+  --sun:#b9573a; --read:#3f5f7a; --discuss:#b9573a; --reflect:#4f7a5e; --pray:#9a7a2e;
+  --chip-bg:#efece6; --verse-bg:#f1efea;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#181715; --paper:#201f1c; --ink:#ece9e3; --muted:#a29e96; --line:#34322e;
+  --sun:#e08a6a; --read:#8fb4d3; --discuss:#e08a6a; --reflect:#8cc3a0; --pray:#d6b766;
+  --chip-bg:#2a2825; --verse-bg:#24221f; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#181715; --paper:#201f1c; --ink:#ece9e3; --muted:#a29e96; --line:#34322e;
+  --sun:#e08a6a; --read:#8fb4d3; --discuss:#e08a6a; --reflect:#8cc3a0; --pray:#d6b766;
+  --chip-bg:#2a2825; --verse-bg:#24221f; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}
+a:hover{text-decoration-color:currentColor}
+.wrap{max-width:620px;margin:0 auto;padding-inline:20px;padding-block:36px 64px}
+.date{color:var(--muted);font-size:15px;margin:0}
+h1{font-family:var(--display);font-weight:600;font-size:clamp(32px,8.5vw,44px);line-height:1.12;letter-spacing:-.01em;margin:14px 0 0;text-wrap:balance}
+.lede{color:var(--muted);font-size:17px;margin:14px 0 0;max-width:52ch}
+.horizon{display:block;width:100%;height:auto;margin:26px 0 8px}
+.horizon .ln{stroke:var(--ink);fill:none;stroke-width:1.5}
+.horizon .sun{stroke:var(--sun);fill:none;stroke-width:1.6}
+.horizon .dot{fill:var(--ink)}
+.horizon .cup{stroke:var(--muted);fill:none;stroke-width:1.4}
+.rows{display:grid;margin:0}
+.row{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row dt{font-weight:600;font-variant-numeric:tabular-nums;font-size:15px}
+.row dd{margin:0;color:var(--muted);font-size:15px}
+section.block{border-top:1px solid var(--line);margin-top:28px;padding-top:30px}
+h2{font-family:var(--body);font-weight:600;font-size:22px;margin:0 0 6px;letter-spacing:-.005em}
+.sub{color:var(--muted);font-size:15px;margin:0 0 18px}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px 3px 7px;border-radius:999px;background:var(--chip-bg);line-height:1.5}
+.chip::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.c-read{color:var(--read)} .c-discuss{color:var(--discuss)} .c-reflect{color:var(--reflect)} .c-pray{color:var(--pray)}
+ol.steps{list-style:none;margin:0;padding:0;display:grid;gap:30px;counter-reset:s}
+ol.steps>li{display:grid;grid-template-columns:28px 1fr;gap:10px;counter-increment:s}
+ol.steps>li::before{content:counter(s);color:var(--muted);font-size:18px;line-height:1.5;font-variant-numeric:tabular-nums}
+.step{min-width:0}
+.step h3{font-size:18px;font-weight:600;margin:0;line-height:1.4}
+.step .time{color:var(--muted);font-weight:400}
+.step .chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 10px}
+.step p{margin:0 0 10px;color:var(--ink)}
+.step p.m{color:var(--muted)}
+blockquote{margin:6px 0 12px;padding:14px 16px;background:var(--verse-bg);border-radius:10px;font-family:var(--display);font-weight:500;font-size:17px;line-height:1.65}
+blockquote sup{font-family:var(--body);font-size:10.5px;font-weight:600;color:var(--muted);margin-right:3px}
+blockquote cite{display:block;font-family:var(--body);font-style:normal;font-size:13px;color:var(--muted);margin-top:8px}
+.q{display:grid;gap:10px;margin:4px 0 0;padding:0;list-style:none}
+.q li{padding-left:14px;border-left:2px solid var(--line)}
+.q li.d{border-left-color:var(--discuss)} .q li.r{border-left-color:var(--reflect)}
+form{display:grid;gap:16px}
+label{display:block;font-weight:600;font-size:15px;margin-bottom:6px}
+input,textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+textarea{min-height:88px;resize:vertical}
+input:focus-visible,textarea:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--sun);outline-offset:2px}
+button{font:inherit;font-weight:600;font-size:15px;border:0;border-radius:999px;padding:12px 22px;cursor:pointer;background:var(--ink);color:var(--bg);justify-self:start}
+.status{font-size:14px;color:var(--muted);min-height:1.4em;margin:0}
+.status.ok{color:var(--reflect)}
+ul.refs{list-style:none;margin:0;padding:0;display:grid}
+ul.refs li{padding:12px 0;border-bottom:1px solid var(--line);display:grid;gap:2px}
+ul.refs li:last-child{border-bottom:0}
+ul.refs a{font-weight:600}
+ul.refs span{color:var(--muted);font-size:14px}
+.structure{margin:0 0 12px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
+.structure h4{margin:0 0 8px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--read)}
+.structure ol{margin:0;padding-left:20px;display:grid;gap:6px;font-size:15px}
+.structure ol li::marker{color:var(--muted);font-variant-numeric:tabular-nums}
+.structure .vv{font-weight:600;font-variant-numeric:tabular-nums}
+.structure p{margin:8px 0 0;font-size:14px;color:var(--muted)}
+.home{font-weight:600;text-decoration:none}
+footer{margin-top:40px;color:var(--muted);font-family:var(--display);font-size:18px;text-align:center}
+@media (max-width:420px){.row{grid-template-columns:78px 1fr}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <p class="date"><a href="../" class="home">← Spirit &amp; Truth</a> · Friday · October 16 2026</p>
+  <h1>Two men went up to pray, and only one went home right with God.</h1>
+  <p class="lede">Coffee and the Word at Jim's, 6:30 to about 7:25. A short guide to walk us through Luke 18 together.</p>
+
+  <svg class="horizon" viewBox="0 0 580 110" role="img" aria-label="A sunrise over a horizon line, with a coffee cup on the right">
+    <g class="sun"><circle cx="96" cy="44" r="13"/><path d="M96 16v8M73 27l5 5M119 27l-5 5M66 44h8M118 44h8"/></g>
+    <path class="ln" d="M0 92 C120 91 200 90 240 88 C262 86 278 78 290 72 C302 78 318 86 340 88 C380 90 460 91 580 92"/>
+    <circle class="dot" cx="290" cy="72" r="5"/>
+    <g class="cup"><path d="M480 52h28v18a10 10 0 0 1-10 10h-8a10 10 0 0 1-10-10z"/><path d="M508 57h5a6 6 0 0 1 0 12h-5"/><path d="M488 44c0-4 4-4 4-8M498 44c0-4 4-4 4-8"/></g>
+  </svg>
+
+  <dl class="rows">
+    <div class="row"><dt>6:30 AM</dt><dd>Coffee, then open in prayer.</dd></div>
+    <div class="row"><dt>6:35 AM</dt><dd>Lead-in from Luke 17, then read Luke 18:9–14.</dd></div>
+    <div class="row"><dt>6:45 AM</dt><dd>Who these two men were, then talk it through.</dd></div>
+    <div class="row"><dt>7:10 AM</dt><dd>Matthew 23 and one thing to carry into the week.</dd></div>
+    <div class="row"><dt>7:20 AM</dt><dd>Prayer requests. Jim closes us out.</dd></div>
+  </dl>
+
+  <section class="block" aria-labelledby="guide-h">
+    <h2 id="guide-h">The guide</h2>
+    <p class="sub">Each step is marked so you know what it's asking of you.</p>
+    <div class="legend" style="margin-bottom:26px">
+      <span class="chip c-read">Read</span><span class="chip c-discuss">Discuss</span><span class="chip c-reflect">Reflect</span><span class="chip c-pray">Pray</span>
+    </div>
+
+    <ol class="steps">
+      <li><div class="step">
+        <h3>Open in prayer <span class="time">· 6:30</span></h3>
+        <div class="chips"><span class="chip c-pray">Pray</span></div>
+        <p class="m">Ask God to quiet the noise from the week and open our hearts to what He wants to show us.</p>
+      </div></li>
+
+      <li><div class="step">
+        <h3>Lead-in: Luke 17:10 <span class="time">· 6:35</span></h3>
+        <div class="chips"><span class="chip c-read">Read</span><span class="chip c-reflect">Reflect</span></div>
+        <blockquote><sup>10</sup>So likewise ye, when ye shall have done all those things which are commanded you, say, We are unprofitable servants: we have done that which was our duty to do.<cite><a href="https://www.biblegateway.com/passage/?search=Luke+17%3A7-10&amp;version=KJV" target="_blank" rel="noopener">Luke 17:10, KJV ↗</a></cite></blockquote>
+        <div class="structure"><h4>How it's built</h4><ol>
+<li><span class="vv">v. 7–9</span> Setup: a servant comes in from the field and still serves his master supper first. No one thanks him for doing his job.</li>
+<li><span class="vv">v. 10a</span> The condition: "when ye shall have done <i>all</i>" that was commanded. Jesus assumes full obedience.</li>
+<li><span class="vv">v. 10b</span> The confession: "We are unprofitable servants." Even full obedience earns no bonus.</li>
+<li><span class="vv">v. 10c</span> The reason: "we have done that which was our duty." Obedience is what a servant owes, not credit he banks.</li>
+</ol><p>Why it leads in: the Pharisee in Luke 18 does the opposite. He lists his duties as if they were credit.</p></div>
+        <ul class="q"><li class="r">When have you wanted credit for something you were supposed to do anyway?</li></ul>
+      </div></li>
+
+      <li><div class="step">
+        <h3>Read the passage out loud <span class="time">· 6:40</span></h3>
+        <div class="chips"><span class="chip c-read">Read</span></div>
+        <blockquote><sup>9</sup>And he spake this parable unto certain which trusted in themselves that they were righteous, and despised others: <sup>10</sup>Two men went up into the temple to pray; the one a Pharisee, and the other a publican. <sup>11</sup>The Pharisee stood and prayed thus with himself, God, I thank thee, that I am not as other men are, extortioners, unjust, adulterers, or even as this publican. <sup>12</sup>I fast twice in the week, I give tithes of all that I possess. <sup>13</sup>And the publican, standing afar off, would not lift up so much as his eyes unto heaven, but smote upon his breast, saying, God be merciful to me a sinner. <sup>14</sup>I tell you, this man went down to his house justified rather than the other: for every one that exalteth himself shall be abased; and he that humbleth himself shall be exalted.<cite><a href="https://www.biblegateway.com/passage/?search=Luke+18%3A9-14&amp;version=KJV" target="_blank" rel="noopener">Luke 18:9–14, KJV ↗</a> · <a href="https://www.biblegateway.com/passage/?search=Luke+18%3A9-14&amp;version=NIV" target="_blank" rel="noopener">NIV ↗</a></cite></blockquote>
+        <div class="structure"><h4>How it's built</h4><ol>
+<li><span class="vv">v. 9</span> The frame: Luke names the audience before the story starts: people who "trusted in themselves" and "despised others." The parable is aimed at them.</li>
+<li><span class="vv">v. 10</span> The setup: two men, same place (the temple), same act (prayer). Only the heart will differ.</li>
+<li><span class="vv">v. 11–12</span> The Pharisee: he stands and prays "with himself." He compares ("not as other men… or even as this publican") and lists his record (fasting twice a week, tithing everything). He thanks God but never asks Him for anything.</li>
+<li><span class="vv">v. 13</span> The tax collector: he stands far off, won't lift his eyes, beats his chest. One short request: "God be merciful to me a sinner." He compares himself to no one.</li>
+<li><span class="vv">v. 14a</span> The verdict: "this man went down to his house justified rather than the other." Jesus reverses what the crowd expected.</li>
+<li><span class="vv">v. 14b</span> The principle: "every one that exalteth himself shall be abased; and he that humbleth himself shall be exalted." It turns the story into a rule for everyone.</li>
+</ol><p>Notice the bookends: verse 9 says they "trusted in themselves that they were righteous," and verse 14 says only the humble man went home "justified" (declared righteous). Righteousness is the theme at both ends, but it's received, not claimed.</p></div>
+      </div></li>
+
+      <li><div class="step">
+        <h3>Who these two men were <span class="time">· 6:45</span></h3>
+        <div class="chips"><span class="chip c-read">Read</span></div>
+        <p><b>The Pharisee.</b> The name likely comes from a Hebrew word meaning "separated." Pharisees were devout, respected laymen who worked hard to live out God's law in daily life. Paul and Nicodemus were both Pharisees. Jesus' crowd would have seen this man as the good guy.</p>
+        <p><b>The tax collector</b> (the "publican" in the KJV). Rome hired locals to collect taxes, and many padded the bill and kept the extra. Their own people saw them as traitors and cheats.</p>
+        <p class="m">So when Jesus says the tax collector went home justified, the room would have been stunned.</p>
+      </div></li>
+
+      <li><div class="step">
+        <h3>Talk it through <span class="time">· 6:50</span></h3>
+        <div class="chips"><span class="chip c-discuss">Discuss</span></div>
+        <p class="m">Go wherever the conversation goes. If it drifts, come back to one question: who went home justified, and why?</p>
+        <ul class="q">
+          <li class="d">Why did the Pharisee's prayer go wrong, when everything he said about himself was probably true?</li>
+          <li class="d">Where do we compare ourselves to "that guy" instead of looking at God?</li>
+          <li class="d">What does the tax collector have that the Pharisee doesn't?</li>
+          <li class="d">What does humility look like on a Tuesday, at work or at home?</li>
+        </ul>
+      </div></li>
+
+      <li><div class="step">
+        <h3>Humility looks like serving <span class="time">· 7:10</span></h3>
+        <div class="chips"><span class="chip c-read">Read</span><span class="chip c-discuss">Discuss</span></div>
+        <blockquote><sup>11</sup>But he that is greatest among you shall be your servant. <sup>12</sup>And whosoever shall exalt himself shall be abased; and he that humbleth himself shall be exalted.<cite><a href="https://www.biblegateway.com/passage/?search=Matthew+23%3A11-12&amp;version=KJV" target="_blank" rel="noopener">Matthew 23:11–12, KJV ↗</a></cite></blockquote>
+        <div class="structure"><h4>How it's built</h4><ol>
+<li><span class="vv">Context</span> Matthew 23 is Jesus' public warning about the scribes and Pharisees: they love the best seats and titles (v. 5–10).</li>
+<li><span class="vv">v. 11</span> The principle: the greatest is the servant. Greatness is measured by service, not position.</li>
+<li><span class="vv">v. 12</span> The reversal: the same exalt/abase, humble/exalt saying as Luke 18:14 (and Luke 14:11). Jesus repeated it in different settings.</li>
+</ol><p>Put together: Luke 17 says obedience isn't credit, Luke 18 says comparison isn't righteousness, and Matthew 23 says humility shows up as serving.</p></div>
+        <p class="m">Verse 12 says almost word for word what Jesus says at the end of Luke 18.</p>
+        <ul class="q"><li class="d">Who's someone you know that serves without needing anyone to notice?</li></ul>
+      </div></li>
+
+      <li><div class="step">
+        <h3>One thing to carry into the week <span class="time">· 7:15</span></h3>
+        <div class="chips"><span class="chip c-reflect">Reflect</span></div>
+        <p class="m">Take a quiet minute. Then each of us names one thing.</p>
+        <ul class="q"><li class="r">Where will I catch myself comparing this week, and what will I do instead?</li></ul>
+      </div></li>
+
+      <li><div class="step">
+        <h3>Prayer requests and close <span class="time">· 7:20</span></h3>
+        <div class="chips"><span class="chip c-pray">Pray</span></div>
+        <p>Three babies on the way in our circle, due in the next three to six months. Jim will share more.</p>
+        <p class="m">Jim closes us out.</p>
+      </div></li>
+    </ol>
+  </section>
+
+  <section class="block" aria-labelledby="teach-h">
+    <h2 id="teach-h">Teaching it through</h2>
+    <p class="sub">Teaching notes in a kingdom-preaching style: plain talk, everyday pictures, and points that stick. Use what helps and leave the rest.</p>
+    <ol class="steps">
+      <li><div class="step">
+        <h3>The problem: grading on the wrong curve</h3>
+        <p>The Pharisee didn't measure himself against God. He measured himself against the man in the back row. That's like a student grading his own test by finding the worst paper in the class and saying, "Well, at least I beat him." Comparing yourself with the worst person in the room will always make you look good. Comparing yourself with a holy God will always send you to your knees.</p>
+        <p class="m">Luke 18:9 tells us who the story is for: people who "trusted in themselves." Self-trust is the root. Despising others is the fruit.</p>
+      </div></li>
+      <li><div class="step">
+        <h3>The posture: standing tall vs. standing far off</h3>
+        <p>Picture two men in a doctor's office. One talks the whole time about how healthy he is, with his arm bleeding all over the floor. The other one sits down and says, "Doc, I'm sick. Help me." Which one gets treated? The doctor can only treat the man who admits he needs treatment.</p>
+        <p class="m">The Pharisee "stood and prayed thus with himself" (v. 11). The tax collector stood "afar off," eyes down, beating his chest (v. 13). One came to report. The other came to repent.</p>
+      </div></li>
+      <li><div class="step">
+        <h3>The plea: mercy, not merit</h3>
+        <p>The Pharisee's prayer was a résumé: what I don't do, what I do, how often I do it. Count the requests: zero. He didn't come to get anything from God, because he didn't think he needed anything. The tax collector had one sentence: "God be merciful to me a sinner." In the Greek it reads "<i>the</i> sinner," not just "a sinner." He wasn't comparing. He was confessing.</p>
+        <p class="m">The word behind "be merciful" is tied to the place of atonement, the mercy seat. He wasn't asking God to overlook his sin. He was asking God to deal with it God's way.</p>
+      </div></li>
+      <li><div class="step">
+        <h3>The pronouncement: God has the final word</h3>
+        <p>"Justified" is a courtroom word. It's the judge's verdict. You can argue your case all day long, but when the gavel comes down, the only opinion that counts is the one on the bench. Both men went home that day. Only one went home with a not-guilty verdict, and it wasn't the one who argued his own case.</p>
+        <p class="m">Verse 9 says they trusted they were righteous. Verse 14 says God declared the humble man righteous. You don't claim it. You receive it.</p>
+      </div></li>
+      <li><div class="step">
+        <h3>The principle: the kingdom runs upside down</h3>
+        <p>In the world, you climb up to get ahead. In God's kingdom, you get low to go up. Think about a restaurant: the most important person to your meal isn't the one in the nicest suit. It's the one carrying the plate. Jesus says the greatest in the kingdom is the servant (Matthew 23:11). Exalt yourself and God brings you down. Humble yourself and God lifts you up (Luke 18:14; Matthew 23:12).</p>
+        <p class="m">And Luke 17:10 keeps us honest: even when we've done everything right, we've only done our duty. Obedience isn't a bonus. It's the job.</p>
+      </div></li>
+      <li><div class="step">
+        <h3>Bring it home</h3>
+        <p>So here's the question for the week: whose paper are you grading yourself against? At work, at home, at church, the moment you catch yourself saying "at least I'm not like him," stop. Trade the comparison for a confession, and trade the spotlight for a towel. That's the man who goes home justified.</p>
+      </div></li>
+    </ol>
+  </section>
+
+  <section class="block" aria-labelledby="t-h">
+    <h2 id="t-h">Before Friday</h2>
+    <p class="sub">If something hits you while you read, jot it here and text it to Mario.</p>
+    <form id="form" novalidate onsubmit="return false">
+      <div><label for="name">Your name</label><input id="name" autocomplete="name"></div>
+      <div><label for="q1">What stands out to you?</label><textarea id="q1"></textarea></div>
+      <div><label for="q2">Anything you want us to talk about?</label><textarea id="q2"></textarea></div>
+      <div><label for="q3">Prayer requests</label><textarea id="q3"></textarea></div>
+      <button type="button" id="copy">Copy my answers</button>
+      <p class="status" id="status" role="status" aria-live="polite">Then paste them into a text to Mario.</p>
+    </form>
+  </section>
+
+  <section class="block" aria-labelledby="r-h">
+    <h2 id="r-h">Go deeper</h2>
+    <p class="sub">For anyone who wants more background.</p>
+    <ul class="refs">
+      <li><a href="https://www.biblegateway.com/passage/?search=Luke+18%3A9-14&amp;version=KJV" target="_blank" rel="noopener">Luke 18:9–14 on Bible Gateway ↗</a><span>Read it in KJV, NIV, ESV, and other translations side by side.</span></li>
+      <li><a href="https://www.blueletterbible.org/lexicon/g5330/kjv/tr/0-1/" target="_blank" rel="noopener">"Pharisee" in the Greek, Blue Letter Bible ↗</a><span>Where the word comes from and every place it shows up in the KJV.</span></li>
+      <li><a href="https://www.britannica.com/topic/Pharisee" target="_blank" rel="noopener">Pharisee, Encyclopaedia Britannica ↗</a><span>Who the Pharisees were and what they believed.</span></li>
+      <li><a href="https://www.britannica.com/topic/publican" target="_blank" rel="noopener">Publican, Encyclopaedia Britannica ↗</a><span>How Rome's tax-collecting system worked.</span></li>
+    </ul>
+  </section>
+
+  <footer>Peace and fire. See you Friday.</footer>
+</main>
+
+<script>
+const QS=[["q1","What stands out"],["q2","Want to talk about"],["q3","Prayer requests"]];
+const $=id=>document.getElementById(id);
+const statusEl=$("status");
+const KEY="fw-draft-v2";
+try{const d=JSON.parse(localStorage.getItem(KEY)||"null");if(d)for(const k in d)if($(k))$(k).value=d[k];}catch(e){}
+function draft(){const d={name:$("name").value};QS.forEach(([k])=>d[k]=$(k).value);try{localStorage.setItem(KEY,JSON.stringify(d));}catch(e){}return d;}
+$("form").addEventListener("input",draft);
+function asText(d){let t="Thoughts for Friday"+(d.name.trim()?" ("+d.name.trim()+")":"")+"\n\n";QS.forEach(([k,l])=>{if(d[k].trim())t+=l+":\n"+d[k].trim()+"\n\n";});return t.trim();}
+function say(m,ok){statusEl.textContent=m;statusEl.className="status"+(ok?" ok":"");}
+$("copy").addEventListener("click",()=>{
+  const d=draft();
+  if(!QS.some(([k])=>d[k].trim())){say("Add a thought or two first.");return;}
+  const t=asText(d);
+  const done=()=>say("Copied. Paste it into a text to Mario.",true);
+  const fallback=()=>{
+    const ta=document.createElement("textarea");ta.value=t;ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();
+    try{document.execCommand("copy");done();}catch(e){say("Couldn't copy. Select your answers and copy them by hand.");}
+    ta.remove();
+  };
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done).catch(fallback);}else{fallback();}
+});
+</script>
+</body>
+</html>
