@@ -40,6 +40,10 @@ h2{font-size:28px;font-weight:800;line-height:1.2;margin:44px 0 6px;letter-spaci
 .study h3 a:hover{text-decoration:underline;text-underline-offset:4px}
 .study .ref{color:var(--soft);margin:0 0 8px;font-size:16px}
 .study .links{display:flex;flex-wrap:wrap;gap:6px 18px;font-weight:700;font-size:15px}
+ol.how{list-style:none;margin:0;padding:0;display:grid;gap:14px;counter-reset:h}
+ol.how li{display:grid;grid-template-columns:34px minmax(0,1fr);gap:10px;counter-increment:h;color:var(--soft)}
+ol.how li::before{content:counter(h);width:30px;height:30px;border-radius:50%;background:#2BA3D3;color:#0F1B26;font-weight:800;display:grid;place-items:center;font-size:15px}
+ol.how b{color:var(--ink)}
 .info{display:grid;gap:2px;color:var(--soft);margin:12px 0 0}
 .foot{color:var(--soft);font-size:14px;margin-top:40px;border-top:1px solid var(--line);padding-top:14px}
 @media (max-width:440px){.study{grid-template-columns:84px minmax(0,1fr);gap:12px}.study .thumb{width:84px;height:84px}.study h3{font-size:20px}}
@@ -78,8 +82,17 @@ h2{font-size:28px;font-weight:800;line-height:1.2;margin:44px 0 6px;letter-spaci
 
   <blockquote>God is a Spirit: and they that worship him must worship him in spirit and in truth.<cite><a href="https://www.biblegateway.com/passage/?search=John+4%3A23-24&amp;version=KJV" target="_blank" rel="noopener">John 4:24, KJV ↗</a></cite></blockquote>
 
+  <h2>How to use this site</h2>
+  <p class="sub">Each study goes from learning to teaching. Take it in this order.</p>
+  <ol class="how">
+    <li><div><b>Listen to the commentary.</b> About 11 minutes. Play it on a drive or with your coffee. It walks you through the whole passage.</div></li>
+    <li><div><b>Read the class notes.</b> The structure, the Greek words, and the cross-references. This is where you go deeper.</div></li>
+    <li><div><b>Use the study guide on Friday.</b> It's the plan for the morning, with timed steps, discussion questions, and short audio clips. Bring it up on your phone at Jim's.</div></li>
+    <li><div><b>Send your thoughts.</b> At the bottom of the guide, jot what stood out and tap "Copy my answers" to text it to Mario.</div></li>
+  </ol>
+
   <h2>Studies</h2>
-  <p class="sub">Newest first. Each study has a guide for the morning, a commentary, and class notes to go deeper.</p>
+  <p class="sub">Newest first.</p>
 
   <article class="study">
     <a href="luke-18/" aria-label="Two Men Went Up to Pray study guide">
@@ -99,7 +112,7 @@ h2{font-size:28px;font-weight:800;line-height:1.2;margin:44px 0 6px;letter-spaci
       <p class="when">Friday, October 16, 2026</p>
       <h3><a href="luke-18/">Two Men Went Up to Pray</a></h3>
       <p class="ref">Luke 18:9–14 · The Pharisee and the tax collector</p>
-      <div class="links"><a href="luke-18/">Study guide</a><a href="luke-18/commentary/">Commentary (audio)</a><a href="luke-18/notes/">Class notes</a></div>
+      <div class="links"><a href="luke-18/commentary/">1 · Commentary</a><a href="luke-18/notes/">2 · Class notes</a><a href="luke-18/">3 · Study guide</a></div>
     </div>
   </article>
 
