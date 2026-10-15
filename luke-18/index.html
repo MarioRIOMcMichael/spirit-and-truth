@@ -6,44 +6,47 @@
 <title>Luke 18 · Spirit &amp; Truth</title>
 <meta name="description" content="Coffee and the Word: a short guide through Luke 18:9–14.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap">
 <style>
 :root{
-  --bg:#f8f7f4; --paper:#ffffff; --ink:#22211f; --muted:#6d6a64; --line:#e3e0da;
-  --sun:#b9573a; --read:#3f5f7a; --discuss:#b9573a; --reflect:#4f7a5e; --pray:#9a7a2e;
-  --chip-bg:#efece6; --verse-bg:#f1efea;
-  --display:"Fraunces",Georgia,"Times New Roman",serif;
-  --body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --bg:#FFFFFF; --paper:#FFFFFF; --ink:#1E1E1E; --muted:#5B5F66; --line:#DCDDE0;
+  --sun:#2BA3D3; --read:#2369B8; --discuss:#A7314A; --reflect:#2F6E55; --pray:#9A5A12;
+  --chip-bg:#F5F6F7; --verse-bg:#F5F6F7;
+  --display:"Source Sans 3",-apple-system,"Segoe UI",sans-serif;
+  --body:"Source Sans 3",-apple-system,"Segoe UI",sans-serif;
+  --serif:"Source Serif 4",Georgia,serif;
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#181715; --paper:#201f1c; --ink:#ece9e3; --muted:#a29e96; --line:#34322e;
-  --sun:#e08a6a; --read:#8fb4d3; --discuss:#e08a6a; --reflect:#8cc3a0; --pray:#d6b766;
-  --chip-bg:#2a2825; --verse-bg:#24221f; color-scheme:dark}}
+  --bg:#141619; --paper:#1C1F24; --ink:#ECEDEF; --muted:#A3A8B0; --line:#2D3138;
+  --sun:#7DB2EE; --read:#7DB2EE; --discuss:#E68AA0; --reflect:#7CC3A3; --pray:#E2A45E;
+  --chip-bg:#1C1F24; --verse-bg:#1C1F24; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#181715; --paper:#201f1c; --ink:#ece9e3; --muted:#a29e96; --line:#34322e;
-  --sun:#e08a6a; --read:#8fb4d3; --discuss:#e08a6a; --reflect:#8cc3a0; --pray:#d6b766;
-  --chip-bg:#2a2825; --verse-bg:#24221f; color-scheme:dark}
+  --bg:#141619; --paper:#1C1F24; --ink:#ECEDEF; --muted:#A3A8B0; --line:#2D3138;
+  --sun:#7DB2EE; --read:#7DB2EE; --discuss:#E68AA0; --reflect:#7CC3A3; --pray:#E2A45E;
+  --chip-bg:#1C1F24; --verse-bg:#1C1F24; color-scheme:dark}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}
 a:hover{text-decoration-color:currentColor}
 .wrap{max-width:620px;margin:0 auto;padding-inline:20px;padding-block:36px 64px}
 .date{color:var(--muted);font-size:15px;margin:0}
-h1{font-family:var(--display);font-weight:600;font-size:clamp(32px,8.5vw,44px);line-height:1.12;letter-spacing:-.01em;margin:14px 0 0;text-wrap:balance}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(32px,8.5vw,44px);line-height:1.12;letter-spacing:-.01em;margin:14px 0 0;text-wrap:balance}
 .lede{color:var(--muted);font-size:17px;margin:14px 0 0;max-width:52ch}
-.horizon{display:block;width:100%;height:auto;margin:26px 0 8px}
-.horizon .ln{stroke:var(--ink);fill:none;stroke-width:1.5}
-.horizon .sun{stroke:var(--sun);fill:none;stroke-width:1.6}
-.horizon .dot{fill:var(--ink)}
-.horizon .cup{stroke:var(--muted);fill:none;stroke-width:1.4}
-.rows{display:grid;margin:0}
+.art{display:block;border-radius:14px;overflow:hidden;max-width:100%;height:auto}
+.cover-art{width:180px;height:180px;margin:0 0 20px}
+figure{margin:14px 0 16px}
+figure .art{width:100%;aspect-ratio:16/9;height:auto}
+figcaption{color:var(--muted);font-size:14px;margin-top:6px}
+.notes-link{display:inline-block;margin-top:14px;font-weight:700;color:var(--read)}
+.rows{margin-top:26px}
+.rows{display:grid;margin:26px 0 0}
 .row{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
 .row:last-child{border-bottom:0}
 .row dt{font-weight:600;font-variant-numeric:tabular-nums;font-size:15px}
 .row dd{margin:0;color:var(--muted);font-size:15px}
 section.block{border-top:1px solid var(--line);margin-top:28px;padding-top:30px}
-h2{font-family:var(--body);font-weight:600;font-size:22px;margin:0 0 6px;letter-spacing:-.005em}
+h2{font-family:var(--body);font-weight:800;font-size:26px;margin:0 0 6px;letter-spacing:-.005em}
 .sub{color:var(--muted);font-size:15px;margin:0 0 18px}
 .legend{display:flex;flex-wrap:wrap;gap:8px;margin:0}
 .chip{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px 3px 7px;border-radius:999px;background:var(--chip-bg);line-height:1.5}
@@ -58,7 +61,7 @@ ol.steps>li::before{content:counter(s);color:var(--muted);font-size:18px;line-he
 .step .chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 10px}
 .step p{margin:0 0 10px;color:var(--ink)}
 .step p.m{color:var(--muted)}
-blockquote{margin:6px 0 12px;padding:14px 16px;background:var(--verse-bg);border-radius:10px;font-family:var(--display);font-weight:500;font-size:17px;line-height:1.65}
+blockquote{margin:6px 0 12px;padding:14px 16px;background:var(--verse-bg);border-radius:10px;border-left:4px solid var(--line);font-family:var(--serif);font-weight:400;font-size:17px;line-height:1.65}
 blockquote sup{font-family:var(--body);font-size:10.5px;font-weight:600;color:var(--muted);margin-right:3px}
 blockquote cite{display:block;font-family:var(--body);font-style:normal;font-size:13px;color:var(--muted);margin-top:8px}
 .q{display:grid;gap:10px;margin:4px 0 0;padding:0;list-style:none}
@@ -84,22 +87,37 @@ ul.refs span{color:var(--muted);font-size:14px}
 .structure .vv{font-weight:600;font-variant-numeric:tabular-nums}
 .structure p{margin:8px 0 0;font-size:14px;color:var(--muted)}
 .home{font-weight:600;text-decoration:none}
-footer{margin-top:40px;color:var(--muted);font-family:var(--display);font-size:18px;text-align:center}
+footer{margin-top:40px;color:var(--muted);font-family:var(--serif);font-size:18px;text-align:center}
 @media (max-width:420px){.row{grid-template-columns:78px 1fr}}
 </style>
 </head>
 <body>
+<!-- Shared texture filter for the illustrations -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0" result="g"/>
+    <feComponentTransfer in="g" result="a"><feFuncA type="table" tableValues="0 .22"/></feComponentTransfer>
+    <feComposite in="a" in2="SourceGraphic" operator="in"/>
+  </filter>
+</svg>
 <main class="wrap">
+  <svg class="art cover-art" viewBox="0 0 220 220" role="img" aria-label="Two small figures before a temple at dawn: one standing tall near the steps, one far off with head bowed">
+    <rect width="220" height="220" fill="#2BA3D3"/>
+    <circle cx="168" cy="54" r="22" fill="#F4E6C3"/>
+    <path d="M0 150 C50 136 90 140 130 148 C170 156 196 146 220 140 V220 H0Z" fill="#6B2E5F"/>
+    <path d="M0 176 C60 168 120 172 220 166 V220 H0Z" fill="#0F1B26"/>
+    <g fill="#E9D9B8"><rect x="58" y="96" width="74" height="52"/><path d="M50 98 L95 74 L140 98Z"/></g>
+    <g fill="#0F1B26" opacity=".55"><rect x="68" y="108" width="8" height="40"/><rect x="84" y="108" width="8" height="40"/><rect x="100" y="108" width="8" height="40"/><rect x="116" y="108" width="8" height="40"/></g>
+    <g fill="#FFFFFF"><circle cx="98" cy="146" r="4"/><rect x="95" y="150" width="6" height="16" rx="2"/><path d="M95 152 L86 142 M101 152 L110 142" stroke="#fff" stroke-width="3" stroke-linecap="round"/></g>
+    <g fill="#FFFFFF"><circle cx="186" cy="166" r="4"/><path d="M181 170 q5 -2 9 4 v12 h-9z"/></g>
+    <rect width="220" height="220" filter="url(#grain)" fill="#000"/>
+  </svg>
   <p class="date"><a href="../" class="home">← Spirit &amp; Truth</a> · Friday · October 16 2026</p>
   <h1>Two men went up to pray, and only one went home right with God.</h1>
   <p class="lede">Coffee and the Word at Jim's, 6:30 to about 7:25. A short guide to walk us through Luke 18 together.</p>
+  <a class="notes-link" href="notes/">Read the class notes →</a>
 
-  <svg class="horizon" viewBox="0 0 580 110" role="img" aria-label="A sunrise over a horizon line, with a coffee cup on the right">
-    <g class="sun"><circle cx="96" cy="44" r="13"/><path d="M96 16v8M73 27l5 5M119 27l-5 5M66 44h8M118 44h8"/></g>
-    <path class="ln" d="M0 92 C120 91 200 90 240 88 C262 86 278 78 290 72 C302 78 318 86 340 88 C380 90 460 91 580 92"/>
-    <circle class="dot" cx="290" cy="72" r="5"/>
-    <g class="cup"><path d="M480 52h28v18a10 10 0 0 1-10 10h-8a10 10 0 0 1-10-10z"/><path d="M508 57h5a6 6 0 0 1 0 12h-5"/><path d="M488 44c0-4 4-4 4-8M498 44c0-4 4-4 4-8"/></g>
-  </svg>
 
   <dl class="rows">
     <div class="row"><dt>6:30 AM</dt><dd>Coffee, then open in prayer.</dd></div>
@@ -134,6 +152,17 @@ footer{margin-top:40px;color:var(--muted);font-family:var(--display);font-size:1
 <li><span class="vv">v. 10c</span> The reason: "we have done that which was our duty." Obedience is what a servant owes, not credit he banks.</li>
 </ol><p>Why it leads in: the Pharisee in Luke 18 does the opposite. He lists his duties as if they were credit.</p></div>
         <ul class="q"><li class="r">When have you wanted credit for something you were supposed to do anyway?</li></ul>
+        <figure>
+  <svg class="art" viewBox="0 0 320 180" role="img" aria-label="A servant carrying a tray at the end of a long day; no applause, only a simple table">
+    <rect width="320" height="180" fill="#E9D9B8"/>
+    <path d="M0 138 H320 V180 H0Z" fill="#6B2E5F"/>
+    <circle cx="262" cy="42" r="16" fill="#C9572F"/>
+    <rect x="170" y="104" width="96" height="8" fill="#0F1B26"/><rect x="178" y="112" width="6" height="26" fill="#0F1B26"/><rect x="252" y="112" width="6" height="26" fill="#0F1B26"/>
+    <g fill="#0F1B26"><circle cx="110" cy="62" r="11"/><path d="M98 76 h24 l6 62 h-36z"/><path d="M120 86 l26 -4" stroke="#0F1B26" stroke-width="6" stroke-linecap="round"/><rect x="138" y="74" width="34" height="5" rx="2"/></g>
+    <rect width="320" height="180" filter="url(#grain)" fill="#000"/>
+  </svg>
+  <figcaption>The servant who does his job. Original illustration.</figcaption>
+</figure>
       </div></li>
 
       <li><div class="step">
@@ -156,12 +185,39 @@ footer{margin-top:40px;color:var(--muted);font-family:var(--display);font-size:1
         <p><b>The Pharisee.</b> The name likely comes from a Hebrew word meaning "separated." Pharisees were devout, respected laymen who worked hard to live out God's law in daily life. Paul and Nicodemus were both Pharisees. Jesus' crowd would have seen this man as the good guy.</p>
         <p><b>The tax collector</b> (the "publican" in the KJV). Rome hired locals to collect taxes, and many padded the bill and kept the extra. Their own people saw them as traitors and cheats.</p>
         <p class="m">So when Jesus says the tax collector went home justified, the room would have been stunned.</p>
+        <figure>
+  <svg class="art" viewBox="0 0 320 180" role="img" aria-label="The temple courts: one figure in the center near the steps, another small figure far off at the edge">
+    <rect width="320" height="180" fill="#2BA3D3"/>
+    <path d="M0 132 H320 V180 H0Z" fill="#0F1B26"/>
+    <g fill="#E9D9B8"><rect x="96" y="58" width="128" height="74"/><path d="M84 60 L160 22 L236 60Z"/></g>
+    <g fill="#2BA3D3" opacity=".55"><rect x="110" y="74" width="10" height="58"/><rect x="132" y="74" width="10" height="58"/><rect x="178" y="74" width="10" height="58"/><rect x="200" y="74" width="10" height="58"/></g>
+    <rect x="148" y="86" width="24" height="46" fill="#6B2E5F"/>
+    <g fill="#fff"><circle cx="160" cy="138" r="6"/><rect x="155" y="144" width="10" height="24" rx="3"/></g>
+    <g fill="#fff" opacity=".9"><circle cx="292" cy="148" r="4.5"/><path d="M286 153 q7 -3 12 5 v12 h-12z"/></g>
+    <rect width="320" height="180" filter="url(#grain)" fill="#000"/>
+  </svg>
+  <figcaption>Same place, same act. One near the center, one far off. Original illustration.</figcaption>
+</figure>
       </div></li>
 
       <li><div class="step">
         <h3>Talk it through <span class="time">· 6:50</span></h3>
         <div class="chips"><span class="chip c-discuss">Discuss</span></div>
         <p class="m">Go wherever the conversation goes. If it drifts, come back to one question: who went home justified, and why?</p>
+        <figure>
+  <svg class="art" viewBox="0 0 320 180" role="img" aria-label="Split picture: on the left a tall figure with a long scroll listing deeds; on the right a small bowed figure with hand on chest under a single beam of light">
+    <rect width="160" height="180" fill="#E9D9B8"/><rect x="160" width="160" height="180" fill="#0F1B26"/>
+    <path d="M0 150 H160 V180 H0Z" fill="#6B2E5F"/>
+    <g fill="#0F1B26"><circle cx="62" cy="54" r="11"/><path d="M50 68 h24 l4 82 h-32z"/></g>
+    <g><rect x="84" y="62" width="40" height="80" rx="3" fill="#FFFFFF"/><g stroke="#0F1B26" stroke-width="2.5" stroke-linecap="round"><path d="M92 76h24M92 88h20M92 100h24M92 112h18M92 124h22"/></g></g>
+    <path d="M226 0 L262 0 L280 180 L208 180Z" fill="#F4E6C3" opacity=".18"/>
+    <path d="M160 150 H320 V180 H160Z" fill="#6B2E5F"/>
+    <g fill="#FFFFFF"><circle cx="246" cy="112" r="9"/><path d="M234 122 q12 -6 22 6 l2 22 h-26z"/></g>
+    <path d="M250 128 l-8 8" stroke="#0F1B26" stroke-width="4" stroke-linecap="round"/>
+    <rect width="320" height="180" filter="url(#grain)" fill="#000"/>
+  </svg>
+  <figcaption>One prayer reads a résumé. The other asks for mercy. Original illustration.</figcaption>
+</figure>
         <ul class="q">
           <li class="d">Why did the Pharisee's prayer go wrong, when everything he said about himself was probably true?</li>
           <li class="d">Where do we compare ourselves to "that guy" instead of looking at God?</li>
@@ -181,6 +237,17 @@ footer{margin-top:40px;color:var(--muted);font-family:var(--display);font-size:1
 </ol><p>Put together: Luke 17 says obedience isn't credit, Luke 18 says comparison isn't righteousness, and Matthew 23 says humility shows up as serving.</p></div>
         <p class="m">Verse 12 says almost word for word what Jesus says at the end of Luke 18.</p>
         <ul class="q"><li class="d">Who's someone you know that serves without needing anyone to notice?</li></ul>
+        <figure>
+  <svg class="art" viewBox="0 0 320 180" role="img" aria-label="A figure kneeling with a basin and towel, serving">
+    <rect width="320" height="180" fill="#E9D9B8"/>
+    <path d="M0 140 H320 V180 H0Z" fill="#6B2E5F"/>
+    <g fill="#0F1B26"><circle cx="150" cy="86" r="11"/><path d="M138 98 q12 -4 24 4 l10 30 h-40z"/></g>
+    <rect x="166" y="112" width="36" height="6" rx="2" fill="#FFFFFF"/><path d="M168 118 h32 l-4 18 h-24z" fill="#FFFFFF" opacity=".9"/>
+    <path d="M128 112 q-8 10 -2 24" fill="none" stroke="#C9572F" stroke-width="6" stroke-linecap="round"/>
+    <rect width="320" height="180" filter="url(#grain)" fill="#000"/>
+  </svg>
+  <figcaption>The greatest is the servant. Original illustration.</figcaption>
+</figure>
       </div></li>
 
       <li><div class="step">
@@ -227,6 +294,19 @@ footer{margin-top:40px;color:var(--muted);font-family:var(--display);font-size:1
         <h3>The principle: the kingdom runs upside down</h3>
         <p>In the world, you climb up to get ahead. In God's kingdom, you get low to go up. Think about a restaurant: the most important person to your meal isn't the one in the nicest suit. It's the one carrying the plate. Jesus says the greatest in the kingdom is the servant (Matthew 23:11). Exalt yourself and God brings you down. Humble yourself and God lifts you up (Luke 18:14; Matthew 23:12).</p>
         <p class="m">And Luke 17:10 keeps us honest: even when we've done everything right, we've only done our duty. Obedience isn't a bonus. It's the job.</p>
+        <figure>
+  <svg class="art" viewBox="0 0 320 180" role="img" aria-label="A path with two arrows: one arrow climbing up then dropping down, the other going low then rising high">
+    <rect width="320" height="180" fill="#2BA3D3"/>
+    <path d="M0 150 C80 140 240 140 320 150 V180 H0Z" fill="#0F1B26"/>
+    <path d="M30 130 C70 40 110 40 150 130" fill="none" stroke="#E9D9B8" stroke-width="8" stroke-linecap="round"/>
+    <path d="M140 116 l10 16 l6 -18" fill="none" stroke="#E9D9B8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M170 120 C210 150 250 150 290 40" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+    <path d="M274 46 l16 -8 l2 18" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="290" cy="34" r="10" fill="#F4E6C3"/>
+    <rect width="320" height="180" filter="url(#grain)" fill="#000"/>
+  </svg>
+  <figcaption>The great reversal: up leads down, down leads up. Original illustration.</figcaption>
+</figure>
       </div></li>
       <li><div class="step">
         <h3>Bring it home</h3>
@@ -260,6 +340,7 @@ footer{margin-top:40px;color:var(--muted);font-family:var(--display);font-size:1
   </section>
 
   <footer>Peace and fire. See you Friday.</footer>
+  <p style="text-align:center;margin:18px 0 0;font-size:15px;font-weight:600"><a href="notes/">Class notes</a> · <a href="../">All studies</a></p>
 </main>
 
 <script>

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Class Notes · Luke 18 · Spirit &amp; Truth</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: class-notes format — cover with square illustration, key takeaways, themed sections, labeled scripture blocks, literary-design outline, side-by-side table, word studies, reflection; each idea paired with a symbolic picture the way a teaching video cuts to an image */
+:root{
+  --bg:#FFFFFF; --ink:#1E1E1E; --soft:#5B5F66; --line:#DCDDE0; --panel:#F5F6F7;
+  --link:#2369B8; --green:#2F6E55; --green-soft:#DCEFE5; --rose:#A7314A; --rose-soft:#F8E1E6; --amber:#9A5A12; --amber-soft:#FBE9D2; --slate:#5C6670; --slate-soft:#E7EAED;
+  --sky:#2BA3D3; --night:#0F1B26; --plum:#6B2E5F; --sand:#E9D9B8;
+  --sans:"Source Sans 3",-apple-system,"Segoe UI",sans-serif;
+  --serif:"Source Serif 4",Georgia,serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141619; --ink:#ECEDEF; --soft:#A3A8B0; --line:#2D3138; --panel:#1C1F24;
+  --link:#7DB2EE; --green:#7CC3A3; --green-soft:#1C3329; --rose:#E68AA0; --rose-soft:#3A1E26; --amber:#E2A45E; --amber-soft:#3A2A16; --slate:#AAB4BE; --slate-soft:#262B31; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141619; --ink:#ECEDEF; --soft:#A3A8B0; --line:#2D3138; --panel:#1C1F24;
+  --link:#7DB2EE; --green:#7CC3A3; --green-soft:#1C3329; --rose:#E68AA0; --rose-soft:#3A1E26; --amber:#E2A45E; --amber-soft:#3A2A16; --slate:#AAB4BE; --slate-soft:#262B31; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6}
+.wrap{max-width:780px;margin:0 auto;padding-block:40px 72px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:var(--link)}
+.art{display:block;border-radius:14px;overflow:hidden;max-width:100%;height:auto}
+.cover .art{width:220px;height:220px}
+.kicker{font-weight:700;margin:22px 0 4px}
+h1{font-size:clamp(34px,7vw,46px);font-weight:800;line-height:1.1;margin:0 0 6px;letter-spacing:-.01em;text-wrap:balance}
+.cover .ref{font-size:24px;margin:0}
+.cover .who{font-size:20px;color:var(--soft);margin:2px 0 14px}
+.cover p{max-width:62ch}
+.updated{color:var(--soft);font-size:15px}
+h2{font-size:30px;font-weight:800;line-height:1.2;margin:48px 0 12px;letter-spacing:-.01em;text-wrap:balance}
+h2.session{border-bottom:1px solid var(--line);padding-bottom:14px}
+h3{font-size:21px;font-weight:700;margin:28px 0 8px}
+p{margin:0 0 14px}
+ul{margin:0 0 14px;padding-left:22px}
+li{margin:4px 0}
+.vs{white-space:nowrap}
+blockquote.scr{margin:16px 0;padding:2px 0 2px 16px;border-left:4px solid var(--line)}
+blockquote.scr .lab{font-weight:700;font-size:15px}
+blockquote.scr .lab span{color:var(--soft);font-weight:600;font-size:13px;margin-left:8px}
+blockquote.scr p{margin:6px 0 0}
+blockquote.scr sup{font-size:11px;font-weight:700;color:var(--soft);margin-right:2px}
+blockquote.cite{margin:16px 0;padding:2px 0 2px 16px;border-left:4px solid var(--ink)}
+blockquote.cite .src{color:var(--soft);font-size:15px;margin-top:6px}
+figure{margin:22px 0;text-align:center}
+figure .art{margin:0 auto;width:min(100%,520px);aspect-ratio:16/9;height:auto}
+figcaption{color:var(--soft);font-size:15px;margin-top:8px}
+.hl{background:var(--slate-soft);border-radius:4px;padding:0 4px;font-weight:600}
+.hl.g{background:var(--green-soft);color:var(--green)}
+.hl.r{background:var(--rose-soft);color:var(--rose)}
+.hl.a{background:var(--amber-soft);color:var(--amber)}
+.design{border:2px solid var(--green);border-radius:12px;padding:16px 18px;margin:18px 0}
+.tag{display:inline-block;font-weight:700;font-size:14px;padding:1px 8px;border-radius:5px;background:var(--green);color:var(--bg);margin-bottom:8px}
+.tag.s{background:var(--slate)}
+.design .row{display:grid;grid-template-columns:34px 88px minmax(0,1fr);gap:8px;padding:5px 0;align-items:baseline}
+.design .row.in1{margin-left:22px}.design .row.in2{margin-left:44px}
+.design .let{font-weight:700;color:var(--soft)}
+.design .v{font-weight:700;font-variant-numeric:tabular-nums}
+.design .note{color:var(--soft);font-size:15px;margin:10px 0 0}
+.cmp{width:100%;border:1px solid var(--line);border-radius:12px;border-collapse:separate;border-spacing:0;overflow:hidden;margin:16px 0}
+.cmp th,.cmp td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);font-size:16px}
+.cmp th{background:var(--panel);font-size:15px}
+.cmp td:first-child,.cmp th:first-child{color:var(--soft);width:22%;font-weight:600}
+.cmp td+td,.cmp th+th{border-left:1px solid var(--line)}
+.cmp tr:last-child td{border-bottom:0}
+.tablewrap{overflow-x:auto}
+.cap{color:var(--soft);font-size:15px;font-style:italic;margin-top:-6px}
+.word{background:var(--panel);border-radius:12px;padding:16px 18px;margin:16px 0}
+.word .w{font-size:22px;font-weight:700}
+.word .g{font-family:var(--serif);color:var(--rose);font-size:20px;margin-left:8px}
+.word .t{color:var(--soft);font-size:15px}
+.reflect{border-top:1px solid var(--line);margin-top:40px;padding-top:6px}
+.foot{color:var(--soft);font-size:14px;margin-top:40px;border-top:1px solid var(--line);padding-top:14px}
+@media (max-width:560px){.design .row{grid-template-columns:26px 70px minmax(0,1fr)}.design .row.in1{margin-left:10px}.design .row.in2{margin-left:20px}h2{font-size:26px}}
+.back{display:flex;gap:20px;flex-wrap:wrap;justify-content:center;margin:28px 0 0;font-size:15px;font-weight:600}
+</style>
+</head>
+<body>
+
+<!-- Shared texture filter for the illustrations -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <filter id="grain" x="0" y="0" width="100%" height="100%">
+    <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch" result="n"/>
+    <feColorMatrix in="n" type="saturate" values="0" result="g"/>
+    <feComponentTransfer in="g" result="a"><feFuncA type="table" tableValues="0 .22"/></feComponentTransfer>
+    <feComposite in="a" in2="SourceGraphic" operator="in"/>
+  </filter>
+</svg>
+
+<main class="wrap">
+
+<section class="cover">
+  <svg class="art" viewBox="0 0 220 220" role="img" aria-label="Two small figures before a temple at dawn: one standing tall near the steps, one far off with head bowed">
+    <rect width="220" height="220" fill="#2BA3D3"/>
+    <circle cx="168" cy="54" r="22" fill="#F4E6C3"/>
+    <path d="M0 150 C50 136 90 140 130 148 C170 156 196 146 220 140 V220 H0Z" fill="#6B2E5F"/>
+    <path d="M0 176 C60 168 120 172 220 166 V220 H0Z" fill="#0F1B26"/>
+    <g fill="#E9D9B8"><rect x="58" y="96" width="74" height="52"/><path d="M50 98 L95 74 L140 98Z"/></g>
+    <g fill="#0F1B26" opacity=".55"><rect x="68" y="108" width="8" height="40"/><rect x="84" y="108" width="8" height="40"/><rect x="100" y="108" width="8" height="40"/><rect x="116" y="108" width="8" height="40"/></g>
+    <g fill="#FFFFFF"><circle cx="98" cy="146" r="4"/><rect x="95" y="150" width="6" height="16" rx="2"/><path d="M95 152 L86 142 M101 152 L110 142" stroke="#fff" stroke-width="3" stroke-linecap="round"/></g>
+    <g fill="#FFFFFF"><circle cx="186" cy="166" r="4"/><path d="M181 170 q5 -2 9 4 v12 h-9z"/></g>
+    <rect width="220" height="220" filter="url(#grain)" fill="#000"/>
+  </svg>
+  <p class="kicker">Class Notes · Spirit &amp; Truth</p>
+  <h1>Two Men Went Up to Pray</h1>
+  <p class="ref">Luke 18:9–14</p>
+  <p class="who">Coffee and the Word at Jim's · Friday, October 16, 2026</p>
+  <p>Two men walk into the same temple to do the same thing. One leaves right with God and one doesn't. Jesus tells this story to people who are sure of their own goodness, and turns their scoreboard upside down.</p>
+  <p class="updated">Companion notes to the <a href="../">Luke 18 study guide</a>.</p>
+</section>
+
+<h2 class="session">Key Takeaways</h2>
+<ul>
+  <li>Luke frames the parable before it starts: it is aimed at people who trusted in themselves that they were righteous and looked down on everyone else (v. 9).</li>
+  <li>The story is built in matching pairs. Its center is two prayers side by side, and its edges are two verdicts: who thought they were righteous, and who God declared righteous.</li>
+  <li>The point is not a new rule about how to pray. It is a reversal that runs through all of Jesus' teaching: the one who lifts himself up is brought low, and the one who goes low is lifted up.</li>
+</ul>
+
+<h2>The Lead-In: Doing Your Duty Isn't Credit</h2>
+<p>A few verses earlier, Jesus tells a short story about a servant who works the field all day and then serves his master supper before he eats. No one throws him a party for it. Then Jesus applies it.</p>
+<blockquote class="scr"><div class="lab">Luke 17:10<span>KJV</span></div>
+<p><sup>10</sup>So likewise ye, when ye shall have done all those things which are commanded you, say, We are <b>unprofitable servants</b>: we have done that which was <b>our duty</b> to do.</p></blockquote>
+<p>Hold that next to Luke 18. The Pharisee will stand up and read God a list of the things he was supposed to do anyway, as if they were deposits in an account.</p>
+<figure>
+  <svg class="art" viewBox="0 0 320 180" role="img" aria-label="A servant carrying a tray at the end of a long day; no applause, only a simple table">
+    <rect width="320" height="180" fill="#E9D9B8"/>
+    <path d="M0 138 H320 V180 H0Z" fill="#6B2E5F"/>
+    <circle cx="262" cy="42" r="16" fill="#C9572F"/>
+    <rect x="170" y="104" width="96" height="8" fill="#0F1B26"/><rect x="178" y="112" width="6" height="26" fill="#0F1B26"/><rect x="252" y="112" width="6" height="26" fill="#0F1B26"/>
+    <g fill="#0F1B26"><circle cx="110" cy="62" r="11"/><path d="M98 76 h24 l6 62 h-36z"/><path d="M120 86 l26 -4" stroke="#0F1B26" stroke-width="6" stroke-linecap="round"/><rect x="138" y="74" width="34" height="5" rx="2"/></g>
+    <rect width="320" height="180" filter="url(#grain)" fill="#000"/>
+  </svg>
+  <figcaption>The servant who does his job. Original illustration.</figcaption>
+</figure>
+
+<h2>Setting the Scene</h2>
+<h3>Who the story is for</h3>
+<blockquote class="scr"><div class="lab">Luke 18:9<span>KJV</span></div>
+<p><sup>9</sup>And he spake this parable unto certain which <b>trusted in themselves that they were righteous</b>, and <b>despised others</b>.</p></blockquote>
+<p>Luke tells us the audience before the story starts. Trusting in yourself is the root. Looking down on others is the fruit.</p>
+
+<h3>Two men, one temple</h3>
+<p><b>The Pharisee.</b> The name likely comes from a Hebrew word meaning "separated." Pharisees were devout, respected laymen who worked hard to live out God's law in daily life. Paul and Nicodemus were Pharisees. Jesus' listeners would have assumed this man was the hero.</p>
+<p><b>The tax collector</b> (the "publican" in the KJV). Rome contracted locals to collect taxes, and many padded the bill and kept the difference. Their own people saw them as traitors and thieves. Jesus' listeners would have assumed this man was the villain.</p>
+<figure>
+  <svg class="art" viewBox="0 0 320 180" role="img" aria-label="The temple courts: one figure in the center near the steps, another small figure far off at the edge">
+    <rect width="320" height="180" fill="#2BA3D3"/>
+    <path d="M0 132 H320 V180 H0Z" fill="#0F1B26"/>
+    <g fill="#E9D9B8"><rect x="96" y="58" width="128" height="74"/><path d="M84 60 L160 22 L236 60Z"/></g>
+    <g fill="#2BA3D3" opacity=".55"><rect x="110" y="74" width="10" height="58"/><rect x="132" y="74" width="10" height="58"/><rect x="178" y="74" width="10" height="58"/><rect x="200" y="74" width="10" height="58"/></g>
+    <rect x="148" y="86" width="24" height="46" fill="#6B2E5F"/>
+    <g fill="#fff"><circle cx="160" cy="138" r="6"/><rect x="155" y="144" width="10" height="24" rx="3"/></g>
+    <g fill="#fff" opacity=".9"><circle cx="292" cy="148" r="4.5"/><path d="M286 153 q7 -3 12 5 v12 h-12z"/></g>
+    <rect width="320" height="180" filter="url(#grain)" fill="#000"/>
+  </svg>
+  <figcaption>Same place, same act. One near the center, one far off. Original illustration.</figcaption>
+</figure>
+
+<h2>The Literary Design of the Parable</h2>
+<p>The story is built in matching pairs that mirror each other around a center. The prayers sit in the middle. The edges answer each other: who <i>trusted</i> they were righteous, and who God <i>declared</i> righteous.</p>
+<div class="design">
+  <span class="tag">Luke 18:9–14</span>
+  <div class="row"><span class="let">A</span><span class="v">v. 9</span><span>The audience: those who <span class="hl g">trusted they were righteous</span> and despised others</span></div>
+  <div class="row in1"><span class="let">B</span><span class="v">v. 10</span><span>Two men <span class="hl a">went up</span> into the temple to pray</span></div>
+  <div class="row in2"><span class="let">C</span><span class="v">v. 11–12</span><span>The Pharisee's prayer: stands, compares, lists his record</span></div>
+  <div class="row in2"><span class="let">C'</span><span class="v">v. 13</span><span>The tax collector's prayer: far off, eyes down, one request for <span class="hl r">mercy</span></span></div>
+  <div class="row in1"><span class="let">B'</span><span class="v">v. 14a</span><span>This man <span class="hl a">went down</span> to his house <span class="hl g">justified</span> rather than the other</span></div>
+  <div class="row"><span class="let">A'</span><span class="v">v. 14b</span><span>The principle: whoever exalts himself will be humbled; whoever humbles himself will be exalted</span></div>
+  <p class="note">"Righteous" (v. 9) and "justified" (v. 14) come from the same Greek root. The parable opens with righteousness claimed and closes with righteousness received.</p>
+</div>
+
+<h2>Two Prayers, Side by Side</h2>
+<blockquote class="scr"><div class="lab">Luke 18:10–14<span>KJV</span></div>
+<p><sup>10</sup>Two men went up into the temple to pray; the one a Pharisee, and the other a publican. <sup>11</sup>The Pharisee <b>stood and prayed thus with himself</b>, God, I thank thee, that I am not as other men are, extortioners, unjust, adulterers, or even as this publican. <sup>12</sup>I fast twice in the week, I give tithes of all that I possess. <sup>13</sup>And the publican, <b>standing afar off</b>, would not lift up so much as his eyes unto heaven, but smote upon his breast, saying, <b>God be merciful to me a sinner.</b> <sup>14</sup>I tell you, this man went down to his house justified rather than the other: for every one that exalteth himself shall be abased; and he that humbleth himself shall be exalted.</p></blockquote>
+
+<div class="tablewrap">
+<table class="cmp">
+  <thead><tr><th></th><th>The Pharisee (v. 11–12)</th><th>The tax collector (v. 13)</th></tr></thead>
+  <tbody>
+    <tr><td>Where he stands</td><td>Stands, and prays "<span class="hl">with himself</span>"</td><td>"<span class="hl">Standing afar off</span>"</td></tr>
+    <tr><td>His body</td><td>Upright, nothing noted</td><td>Won't lift his eyes; <span class="hl">beats his chest</span></td></tr>
+    <tr><td>Who he looks at</td><td>Other people: "not as other men… or even as <span class="hl r">this publican</span>"</td><td>Only God</td></tr>
+    <tr><td>What he talks about</td><td>His record: fasting twice a week, tithing everything</td><td>His need: "a sinner"</td></tr>
+    <tr><td>What he asks for</td><td><span class="hl a">Nothing</span></td><td><span class="hl g">Mercy</span></td></tr>
+    <tr><td>How he goes home</td><td>Not justified</td><td><span class="hl g">Justified</span></td></tr>
+  </tbody>
+</table>
+</div>
+<p class="cap">Two prayers compared, from Luke 18:11–13.</p>
+
+<figure>
+  <svg class="art" viewBox="0 0 320 180" role="img" aria-label="Split picture: on the left a tall figure with a long scroll listing deeds; on the right a small bowed figure with hand on chest under a single beam of light">
+    <rect width="160" height="180" fill="#E9D9B8"/><rect x="160" width="160" height="180" fill="#0F1B26"/>
+    <path d="M0 150 H160 V180 H0Z" fill="#6B2E5F"/>
+    <g fill="#0F1B26"><circle cx="62" cy="54" r="11"/><path d="M50 68 h24 l4 82 h-32z"/></g>
+    <g><rect x="84" y="62" width="40" height="80" rx="3" fill="#FFFFFF"/><g stroke="#0F1B26" stroke-width="2.5" stroke-linecap="round"><path d="M92 76h24M92 88h20M92 100h24M92 112h18M92 124h22"/></g></g>
+    <path d="M226 0 L262 0 L280 180 L208 180Z" fill="#F4E6C3" opacity=".18"/>
+    <path d="M160 150 H320 V180 H160Z" fill="#6B2E5F"/>
+    <g fill="#FFFFFF"><circle cx="246" cy="112" r="9"/><path d="M234 122 q12 -6 22 6 l2 22 h-26z"/></g>
+    <path d="M250 128 l-8 8" stroke="#0F1B26" stroke-width="4" stroke-linecap="round"/>
+    <rect width="320" height="180" filter="url(#grain)" fill="#000"/>
+  </svg>
+  <figcaption>One prayer reads a résumé. The other asks for mercy. Original illustration.</figcaption>
+</figure>
+
+<h2>Word Studies</h2>
+<div class="word"><span class="w">"Be merciful"</span><span class="g">ἱλάσθητι</span>
+<p class="t">hilasthēti · Luke 18:13</p>
+<p>This is not the everyday word for "be kind." It comes from the same family as <i>hilastērion</i>, the word used for the <b>mercy seat</b>, the cover of the ark where atonement was made (Hebrews 9:5; compare Romans 3:25). The tax collector isn't asking God to overlook his sin. He is asking God to deal with it the way God provides. In the Greek he also calls himself "<i>the</i> sinner," not just "a sinner."</p></div>
+<div class="word"><span class="w">"Justified"</span><span class="g">δεδικαιωμένος</span>
+<p class="t">dedikaiōmenos · Luke 18:14</p>
+<p>A courtroom word: declared in the right. It shares its root with <i>dikaioi</i>, "righteous," in verse 9. The Pharisee's group trusted they were righteous; God's verdict went to the man who made no claim at all.</p></div>
+<div class="word"><span class="w">"Humbleth himself"</span><span class="g">ταπεινῶν</span>
+<p class="t">tapeinōn · Luke 18:14</p>
+<p>To make low, to bring down. Jesus uses the same saying in Luke 14:11 at a dinner where guests scramble for the best seats, and Matthew records it again in 23:12. It is one of his most repeated teachings.</p></div>
+
+<figure>
+  <svg class="art" viewBox="0 0 320 180" role="img" aria-label="A path with two arrows: one arrow climbing up then dropping down, the other going low then rising high">
+    <rect width="320" height="180" fill="#2BA3D3"/>
+    <path d="M0 150 C80 140 240 140 320 150 V180 H0Z" fill="#0F1B26"/>
+    <path d="M30 130 C70 40 110 40 150 130" fill="none" stroke="#E9D9B8" stroke-width="8" stroke-linecap="round"/>
+    <path d="M140 116 l10 16 l6 -18" fill="none" stroke="#E9D9B8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M170 120 C210 150 250 150 290 40" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+    <path d="M274 46 l16 -8 l2 18" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="290" cy="34" r="10" fill="#F4E6C3"/>
+    <rect width="320" height="180" filter="url(#grain)" fill="#000"/>
+  </svg>
+  <figcaption>The great reversal: up leads down, down leads up. Original illustration.</figcaption>
+</figure>
+
+<h2>Echoes Across Scripture</h2>
+<p>Jesus didn't invent this pattern. He's drawing on a thread that runs through Israel's scriptures.</p>
+<blockquote class="scr"><div class="lab">Psalm 51:17<span>KJV</span></div>
+<p><sup>17</sup>The sacrifices of God are a broken spirit: a broken and a contrite heart, O God, thou wilt not despise.</p></blockquote>
+<blockquote class="scr"><div class="lab">Proverbs 3:34<span>KJV</span></div>
+<p><sup>34</sup>Surely he scorneth the scorners: but he <b>giveth grace unto the lowly</b>.</p></blockquote>
+<p>James 4:6 and 1 Peter 5:5 both quote this proverb from its Greek translation: "God resisteth the proud, but giveth grace unto the humble."</p>
+<blockquote class="scr"><div class="lab">Matthew 23:11–12<span>KJV</span></div>
+<p><sup>11</sup>But he that is greatest among you shall be your servant. <sup>12</sup>And whosoever shall exalt himself shall be abased; and he that humbleth himself shall be exalted.</p></blockquote>
+<p>In Matthew 23, the same saying closes Jesus' warning about religious leaders who love the best seats and titles. Humility isn't only a posture in prayer. It shows up as service.</p>
+<figure>
+  <svg class="art" viewBox="0 0 320 180" role="img" aria-label="A figure kneeling with a basin and towel, serving">
+    <rect width="320" height="180" fill="#E9D9B8"/>
+    <path d="M0 140 H320 V180 H0Z" fill="#6B2E5F"/>
+    <g fill="#0F1B26"><circle cx="150" cy="86" r="11"/><path d="M138 98 q12 -4 24 4 l10 30 h-40z"/></g>
+    <rect x="166" y="112" width="36" height="6" rx="2" fill="#FFFFFF"/><path d="M168 118 h32 l-4 18 h-24z" fill="#FFFFFF" opacity=".9"/>
+    <path d="M128 112 q-8 10 -2 24" fill="none" stroke="#C9572F" stroke-width="6" stroke-linecap="round"/>
+    <rect width="320" height="180" filter="url(#grain)" fill="#000"/>
+  </svg>
+  <figcaption>The greatest is the servant. Original illustration.</figcaption>
+</figure>
+
+<section class="reflect">
+<h2>Reflection Questions</h2>
+<ul>
+  <li>Everything the Pharisee said about himself was probably true. Why did his prayer still go wrong?</li>
+  <li>Who is the "this publican" you're tempted to measure yourself against at work, at home, or at church?</li>
+  <li>The tax collector asked for one thing. If you prayed one sentence this week, what would it be?</li>
+  <li>Where could humility look like serving someone this week, without anyone noticing?</li>
+</ul>
+</section>
+
+<p class="foot">Scripture quotations are from the King James Version (public domain). Greek words from the standard text of Luke. Illustrations are original to these notes.</p>
+
+<nav class="back"><a href="../">← Luke 18 study guide</a><a href="../../">All studies</a></nav>
+</main>
+</body>
+</html>
