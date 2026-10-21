@@ -101,7 +101,11 @@ ul.refs span{color:var(--muted);font-size:14px}
 footer{margin-top:40px;color:var(--muted);font-family:var(--serif);font-size:18px;text-align:center}
 @media (max-width:420px){.row{grid-template-columns:78px 1fr}}
 </style>
-</head>
+<style id="redesign-overrides">
+:root{--bg:#f4f0e8;--paper:#fffdf8;--ink:#17252a;--muted:#5b696b;--line:#d9d6cc;--sun:#d89b39;--read:#1f6f70;--discuss:#bd5a45;--reflect:#2f7b68;--pray:#9a6418;--chip-bg:#e9f0ea;--verse-bg:#f4f0e8;--display:"DM Sans",-apple-system,"Segoe UI",sans-serif;--body:"DM Sans",-apple-system,"Segoe UI",sans-serif;--serif:"Libre Baskerville",Georgia,serif}
+:root[data-theme=dark]{--bg:#122124;--paper:#1b3032;--ink:#f3eee2;--muted:#b8c3bf;--line:#3c5555;--sun:#e7b967;--read:#8bc6bd;--discuss:#e58c72;--reflect:#8fcdb4;--pray:#e7b967;--chip-bg:#294345;--verse-bg:#1b3032}
+body{background:var(--bg);font-family:var(--body)}.wrap{max-width:760px;padding-inline:clamp(20px,4vw,36px)}h1,h2,.step h3{font-family:var(--display)}.cover-art{border-radius:22px;box-shadow:10px 10px 0 color-mix(in srgb,var(--sun) 35%,transparent)}.modebar{position:sticky;top:12px;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 20px;padding:8px 10px 8px 14px;border:1px solid var(--line);border-radius:999px;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(12px);box-shadow:0 8px 24px rgba(23,37,42,.08)}.modebar span{font-size:13px;font-weight:700;color:var(--muted)}.mode-buttons{display:flex;gap:4px}.mode-buttons button{padding:7px 12px;background:transparent;color:var(--muted);border:1px solid transparent}.mode-buttons button.active{background:var(--read);color:#fff;border-color:var(--read)}.teacher-note{display:none}.teacher-note strong{color:var(--ink)}body.teacher .teacher-note{display:block;padding:12px 14px;border-left:3px solid var(--sun);background:var(--verse-bg);color:var(--muted);font-size:14px;margin:0 0 18px}body.teacher .step{border-radius:16px;padding:12px 14px;background:color-mix(in srgb,var(--paper) 78%,transparent)}body.teacher .time{color:var(--discuss)}.rows{border:1px solid var(--line);border-radius:18px;padding:6px 16px;background:var(--paper)}section.block{margin-top:44px}.clip,.listen{border:1px solid var(--line)}footer{font-family:var(--serif)}@media(max-width:600px){.modebar{top:6px}.modebar span{font-size:12px}.mode-buttons button{padding:7px 9px;font-size:13px}}
+</style></head>
 <body>
 <!-- Shared texture filter for the illustrations -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -112,7 +116,7 @@ footer{margin-top:40px;color:var(--muted);font-family:var(--serif);font-size:18p
     <feComposite in="a" in2="SourceGraphic" operator="in"/>
   </filter>
 </svg>
-<main class="wrap">
+<main class="wrap"><div class="modebar" role="group" aria-label="Page mode"><span id="mode-label">Study mode</span><div class="mode-buttons"><button type="button" id="study-mode" class="active">Study</button><button type="button" id="teacher-mode">Teacher</button><button type="button" id="theme-mode">☾</button></div></div><p class="teacher-note"><strong>Lead the room.</strong> Teacher mode keeps the timing, audio clips, and discussion prompts visually close at hand.</p>
   <figure class="vid hero-vid"><video controls playsinline preload="metadata" poster="video/parable-poster.jpg" src="video/parable.mp4">Your browser can't play this video. <a href="video/parable.mp4">Download it</a>.</video><figcaption>Two men went up to pray · 40 seconds</figcaption></figure>
   <p class="date"><a href="../" class="home">← Spirit &amp; Truth</a> · Friday · October 16 2026</p>
   <h1>Two men went up to pray, and only one went home right with God.</h1>
@@ -373,5 +377,10 @@ $("copy").addEventListener("click",()=>{
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done).catch(fallback);}else{fallback();}
 });
 </script>
-</body>
+<script>
+const page=document.body, modeLabel=document.getElementById('mode-label'), studyMode=document.getElementById('study-mode'), teacherMode=document.getElementById('teacher-mode'), themeMode=document.getElementById('theme-mode');
+function setMode(mode){page.classList.toggle('teacher',mode==='teacher');modeLabel.textContent=mode==='teacher'?'Teacher mode':'Study mode';studyMode.classList.toggle('active',mode==='study');teacherMode.classList.toggle('active',mode==='teacher');localStorage.setItem('study-mode',mode)}
+const savedMode=localStorage.getItem('study-mode')||'study';setMode(savedMode);studyMode.onclick=()=>setMode('study');teacherMode.onclick=()=>setMode('teacher');
+const savedTheme=localStorage.getItem('theme');if(savedTheme)document.documentElement.dataset.theme=savedTheme;themeMode.onclick=()=>{const dark=document.documentElement.dataset.theme==='dark';document.documentElement.dataset.theme=dark?'light':'dark';localStorage.setItem('theme',document.documentElement.dataset.theme)};
+</script></body>
 </html>
