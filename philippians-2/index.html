@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Philippians 2 · Spirit &amp; Truth</title>
+<meta name="description" content="Coffee and the Word: a short guide through Philippians 2:3–8.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap">
+<style>
+:root{
+  --bg:#FFFFFF; --paper:#FFFFFF; --ink:#1E1E1E; --muted:#5B5F66; --line:#DCDDE0;
+  --sun:#2BA3D3; --read:#2369B8; --discuss:#A7314A; --reflect:#2F6E55; --pray:#9A5A12;
+  --chip-bg:#F5F6F7; --verse-bg:#F5F6F7;
+  --display:"Source Sans 3",-apple-system,"Segoe UI",sans-serif;
+  --body:"Source Sans 3",-apple-system,"Segoe UI",sans-serif;
+  --serif:"Source Serif 4",Georgia,serif;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141619; --paper:#1C1F24; --ink:#ECEDEF; --muted:#A3A8B0; --line:#2D3138;
+  --sun:#7DB2EE; --read:#7DB2EE; --discuss:#E68AA0; --reflect:#7CC3A3; --pray:#E2A45E;
+  --chip-bg:#1C1F24; --verse-bg:#1C1F24; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141619; --paper:#1C1F24; --ink:#ECEDEF; --muted:#A3A8B0; --line:#2D3138;
+  --sun:#7DB2EE; --read:#7DB2EE; --discuss:#E68AA0; --reflect:#7CC3A3; --pray:#E2A45E;
+  --chip-bg:#1C1F24; --verse-bg:#1C1F24; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:inherit;text-decoration-color:var(--line);text-underline-offset:3px}
+a:hover{text-decoration-color:currentColor}
+.wrap{max-width:620px;margin:0 auto;padding-inline:20px;padding-block:36px 64px}
+.date{color:var(--muted);font-size:15px;margin:0}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(32px,8.5vw,44px);line-height:1.12;letter-spacing:-.01em;margin:14px 0 0;text-wrap:balance}
+.lede{color:var(--muted);font-size:17px;margin:14px 0 0;max-width:52ch}
+.art{display:block;border-radius:14px;overflow:hidden;max-width:100%;height:auto}
+.cover-art{width:180px;height:180px;margin:0 0 20px}
+figure{margin:14px 0 16px}
+figure .art{width:100%;aspect-ratio:16/9;height:auto}
+figcaption{color:var(--muted);font-size:14px;margin-top:6px}
+.listen{margin:22px 0 0;padding:14px 16px;background:var(--verse-bg);border-radius:12px}
+.listen .lab{font-weight:700;margin:0 0 2px}
+.listen .len{color:var(--muted);font-size:14px;margin:0 0 10px}
+.listen audio{display:block;width:100%}
+.vid{margin:4px 0 14px}
+.hero-vid{margin:0 0 18px}
+.vid video{display:block;width:100%;aspect-ratio:16/9;border-radius:12px;background:#0F1B26}
+.clip{margin:4px 0 14px;padding:10px 12px;background:var(--verse-bg);border-radius:10px}
+.clip .cl{display:flex;justify-content:space-between;gap:10px;font-size:14px;font-weight:700;color:var(--read);margin:0 0 6px}
+.clip .cl span{color:var(--muted);font-weight:600}
+.clip audio{display:block;width:100%;height:40px}
+.notes-link{display:inline-block;margin-top:14px;font-weight:700;color:var(--read)}
+.rows{margin-top:26px}
+.rows{display:grid;margin:26px 0 0}
+.row{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row dt{font-weight:600;font-variant-numeric:tabular-nums;font-size:15px}
+.row dd{margin:0;color:var(--muted);font-size:15px}
+section.block{border-top:1px solid var(--line);margin-top:28px;padding-top:30px}
+h2{font-family:var(--body);font-weight:800;font-size:26px;margin:0 0 6px;letter-spacing:-.005em}
+.sub{color:var(--muted);font-size:15px;margin:0 0 18px}
+.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px 3px 7px;border-radius:999px;background:var(--chip-bg);line-height:1.5}
+.chip::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.c-read{color:var(--read)} .c-discuss{color:var(--discuss)} .c-reflect{color:var(--reflect)} .c-pray{color:var(--pray)}
+ol.steps{list-style:none;margin:0;padding:0;display:grid;gap:30px;counter-reset:s}
+ol.steps>li{display:grid;grid-template-columns:28px 1fr;gap:10px;counter-increment:s}
+ol.steps>li::before{content:counter(s);color:var(--muted);font-size:18px;line-height:1.5;font-variant-numeric:tabular-nums}
+.step{min-width:0}
+.step h3{font-size:18px;font-weight:600;margin:0;line-height:1.4}
+.step .time{color:var(--muted);font-weight:400}
+.step .chips{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 10px}
+.step p{margin:0 0 10px;color:var(--ink)}
+.step p.m{color:var(--muted)}
+blockquote{margin:6px 0 12px;padding:14px 16px;background:var(--verse-bg);border-radius:10px;border-left:4px solid var(--line);font-family:var(--serif);font-weight:400;font-size:17px;line-height:1.65}
+blockquote sup{font-family:var(--body);font-size:10.5px;font-weight:600;color:var(--muted);margin-right:3px}
+blockquote cite{display:block;font-family:var(--body);font-style:normal;font-size:13px;color:var(--muted);margin-top:8px}
+.q{display:grid;gap:10px;margin:4px 0 0;padding:0;list-style:none}
+.q li{padding-left:14px;border-left:2px solid var(--line)}
+.q li.d{border-left-color:var(--discuss)} .q li.r{border-left-color:var(--reflect)}
+form{display:grid;gap:16px}
+label{display:block;font-weight:600;font-size:15px;margin-bottom:6px}
+input,textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+textarea{min-height:88px;resize:vertical}
+input:focus-visible,textarea:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--sun);outline-offset:2px}
+button{font:inherit;font-weight:600;font-size:15px;border:0;border-radius:999px;padding:12px 22px;cursor:pointer;background:var(--ink);color:var(--bg);justify-self:start}
+.status{font-size:14px;color:var(--muted);min-height:1.4em;margin:0}
+.status.ok{color:var(--reflect)}
+ul.refs{list-style:none;margin:0;padding:0;display:grid}
+ul.refs li{padding:12px 0;border-bottom:1px solid var(--line);display:grid;gap:2px}
+ul.refs li:last-child{border-bottom:0}
+ul.refs a{font-weight:600}
+ul.refs span{color:var(--muted);font-size:14px}
+.structure{margin:0 0 12px;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--paper)}
+.structure h4{margin:0 0 8px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--read)}
+.structure ol{margin:0;padding-left:20px;display:grid;gap:6px;font-size:15px}
+.structure ol li::marker{color:var(--muted);font-variant-numeric:tabular-nums}
+.structure .vv{font-weight:600;font-variant-numeric:tabular-nums}
+.structure p{margin:8px 0 0;font-size:14px;color:var(--muted)}
+.home{font-weight:600;text-decoration:none}
+footer{margin-top:40px;color:var(--muted);font-family:var(--serif);font-size:18px;text-align:center}
+@media (max-width:420px){.row{grid-template-columns:78px 1fr}}
+</style>
+<style id="redesign-overrides">
+:root{--bg:#f4f0e8;--paper:#fffdf8;--ink:#17252a;--muted:#5b696b;--line:#d9d6cc;--sun:#d89b39;--read:#1f6f70;--discuss:#bd5a45;--reflect:#2f7b68;--pray:#9a6418;--chip-bg:#e9f0ea;--verse-bg:#f4f0e8;--display:"DM Sans",-apple-system,"Segoe UI",sans-serif;--body:"DM Sans",-apple-system,"Segoe UI",sans-serif;--serif:"Libre Baskerville",Georgia,serif}
+:root[data-theme=dark]{--bg:#122124;--paper:#1b3032;--ink:#f3eee2;--muted:#b8c3bf;--line:#3c5555;--sun:#e7b967;--read:#8bc6bd;--discuss:#e58c72;--reflect:#8fcdb4;--pray:#e7b967;--chip-bg:#294345;--verse-bg:#1b3032}
+body{background:var(--bg);font-family:var(--body)}.wrap{max-width:760px;padding-inline:clamp(20px,4vw,36px)}h1,h2,.step h3{font-family:var(--display)}.cover-art{border-radius:22px;box-shadow:10px 10px 0 color-mix(in srgb,var(--sun) 35%,transparent)}.modebar{position:sticky;top:12px;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 20px;padding:8px 10px 8px 14px;border:1px solid var(--line);border-radius:999px;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(12px);box-shadow:0 8px 24px rgba(23,37,42,.08)}.modebar span{font-size:13px;font-weight:700;color:var(--muted)}.mode-buttons{display:flex;gap:4px}.mode-buttons button{padding:7px 12px;background:transparent;color:var(--muted);border:1px solid transparent}.mode-buttons button.active{background:var(--read);color:#fff;border-color:var(--read)}.teacher-note{display:none}.teacher-note strong{color:var(--ink)}body.teacher .teacher-note{display:block;padding:12px 14px;border-left:3px solid var(--sun);background:var(--verse-bg);color:var(--muted);font-size:14px;margin:0 0 18px}body.teacher .step{border-radius:16px;padding:12px 14px;background:color-mix(in srgb,var(--paper) 78%,transparent)}body.teacher .time{color:var(--discuss)}.rows{border:1px solid var(--line);border-radius:18px;padding:6px 16px;background:var(--paper)}section.block{margin-top:44px}.clip,.listen{border:1px solid var(--line)}footer{font-family:var(--serif)}@media(max-width:600px){.modebar{top:6px}.modebar span{font-size:12px}.mode-buttons button{padding:7px 9px;font-size:13px}}
+</style></head>
+<body>
+<main class="wrap"><div class="modebar" role="group" aria-label="Page mode"><span id="mode-label">Study mode</span><div class="mode-buttons"><button type="button" id="study-mode" class="active">Study</button><button type="button" id="teacher-mode">Teacher</button><button type="button" id="theme-mode">☾</button></div></div><p class="teacher-note"><strong>Lead the room.</strong> Teacher mode keeps the timing and discussion prompts visually close at hand.</p>
+  <p class="date"><a href="../" class="home">← Spirit &amp; Truth</a> · Friday · November 13 2026</p>
+  <h1>The highest One in the room took the lowest place, and He asks us to think the same way.</h1>
+  <p class="lede">Coffee and the Word at Jim's, 6:30 to about 7:25. A short guide to walk us through Philippians 2 together.</p>
+  <a class="notes-link" href="commentary/">Read the commentary →</a> &nbsp; <a class="notes-link" href="notes/">Class notes →</a>
+  <dl class="rows">
+<div class="row"><dt>6:30 AM</dt><dd>Coffee, then open in prayer.</dd></div>
+<div class="row"><dt>6:35 AM</dt><dd>Lead-in from Luke 18, then read Philippians 2:3–8.</dd></div>
+<div class="row"><dt>6:45 AM</dt><dd>What Paul asks of us, then talk it through.</dd></div>
+<div class="row"><dt>7:00 AM</dt><dd>What Jesus gave up, verse by verse.</dd></div>
+<div class="row"><dt>7:10 AM</dt><dd>One person to put first this week.</dd></div>
+<div class="row"><dt>7:20 AM</dt><dd>Prayer requests, then close in prayer.</dd></div>
+  </dl>
+  <section class="block" aria-labelledby="guide-h">
+    <h2 id="guide-h">The guide</h2>
+    <p class="sub">Each step is marked so you know what it's asking of you.</p>
+    <div class="legend" style="margin-bottom:26px"><span class="chip c-read">Read</span><span class="chip c-discuss">Discuss</span><span class="chip c-reflect">Reflect</span><span class="chip c-pray">Pray</span></div>
+    <ol class="steps">
+<li><div class="step">
+<h3>Open in prayer <span class="time">· 6:30</span></h3>
+<div class="chips"><span class="chip c-pray">Pray</span></div>
+<p class="m">Ask God to settle our minds and show us where we've put ourselves first.</p>
+</div></li>
+<li><div class="step">
+<h3>Lead-in: Luke 18:14 <span class="time">· 6:35</span></h3>
+<div class="chips"><span class="chip c-read">Read</span><span class="chip c-reflect">Reflect</span></div>
+<p class="m">Last time we watched two men pray. Jesus told us who went home justified. Paul now shows us what that low place looks like in daily life.</p>
+<blockquote><sup>14</sup>I tell you, this man went down to his house justified rather than the other: for every one that exalteth himself shall be abased; and he that humbleth himself shall be exalted.<cite><a href="https://www.biblegateway.com/passage/?search=Luke%2018%3A14&amp;version=KJV" target="_blank" rel="noopener">Luke 18:14, KJV ↗</a> · <a href="https://www.biblegateway.com/passage/?search=Luke%2018%3A14&amp;version=NIV" target="_blank" rel="noopener">NIV ↗</a></cite></blockquote>
+<ul class="q"><li class="r">Since Luke 18, where have you caught yourself keeping score?</li></ul>
+</div></li>
+<li><div class="step">
+<h3>Read the passage out loud <span class="time">· 6:40</span></h3>
+<div class="chips"><span class="chip c-read">Read</span></div>
+<blockquote><sup>3</sup>Let nothing be done through strife or vainglory; but in lowliness of mind let each esteem other better than themselves. <sup>4</sup>Look not every man on his own things, but every man also on the things of others. <sup>5</sup>Let this mind be in you, which was also in Christ Jesus: <sup>6</sup>Who, being in the form of God, thought it not robbery to be equal with God: <sup>7</sup>But made himself of no reputation, and took upon him the form of a servant, and was made in the likeness of men: <sup>8</sup>And being found in fashion as a man, he humbled himself, and became obedient unto death, even the death of the cross.<cite><a href="https://www.biblegateway.com/passage/?search=Philippians%202%3A3-8&amp;version=KJV" target="_blank" rel="noopener">Philippians 2:3–8, KJV ↗</a> · <a href="https://www.biblegateway.com/passage/?search=Philippians%202%3A3-8&amp;version=NIV" target="_blank" rel="noopener">NIV ↗</a></cite></blockquote>
+<div class="structure"><h4>How it's built</h4><ol>
+<li><span class="vv">v. 3</span> The command: do nothing from strife or empty glory. Count others better than yourself.</li>
+<li><span class="vv">v. 4</span> The practice: look past your own things to the things of others.</li>
+<li><span class="vv">v. 5</span> The turn: this way of thinking belongs to Christ, and it can be ours.</li>
+<li><span class="vv">v. 6–8</span> The example: Christ goes down, step by step, all the way to the cross.</li>
+</ol></div>
+</div></li>
+<li><div class="step">
+<h3>What Paul asks of us <span class="time">· 6:45</span></h3>
+<div class="chips"><span class="chip c-discuss">Discuss</span></div>
+<p class="m">Paul isn't telling us to think badly of ourselves. He's telling us where to put our attention.</p>
+<ul class="q"><li class="d">What's the difference between thinking less of yourself and thinking of yourself less?</li><li class="d">Where does vainglory show up for men at work, at home, or at church?</li><li class="d">What makes verse 4 hard when you're already tired?</li></ul>
+</div></li>
+<li><div class="step">
+<h3>What Jesus gave up <span class="time">· 7:00</span></h3>
+<div class="chips"><span class="chip c-read">Read</span><span class="chip c-discuss">Discuss</span></div>
+<p class="m">Walk verses 6 through 8 slowly. Count the steps down.</p>
+<ul class="q"><li class="d">Jesus had every right and didn't hold on to it. Which of your rights is hardest to let go of?</li><li class="d">How does knowing the end of the story change how you serve when nobody notices?</li></ul>
+</div></li>
+<li><div class="step">
+<h3>Carry it home <span class="time">· 7:10</span></h3>
+<div class="chips"><span class="chip c-reflect">Reflect</span></div>
+<p class="m">Pick one person. Name one way to put their things ahead of yours this week, and do it without telling anyone.</p>
+<ul class="q"><li class="r">Who is that person, and what will it cost you?</li></ul>
+</div></li>
+<li><div class="step">
+<h3>Prayer requests and close <span class="time">· 7:20</span></h3>
+<div class="chips"><span class="chip c-pray">Pray</span></div>
+<p class="m">Share what you're carrying. Pray for each other, then close.</p>
+</div></li>
+    </ol>
+  </section>
+  <section class="block" aria-labelledby="t-h">
+    <h2 id="t-h">Before Friday</h2>
+    <p class="sub">If something hits you while you read, jot it here and text it to Mario.</p>
+    <form id="form" novalidate onsubmit="return false">
+      <div><label for="name">Your name</label><input id="name" autocomplete="name"></div>
+      <div><label for="q1">What stands out to you?</label><textarea id="q1"></textarea></div>
+      <div><label for="q2">Anything you want us to talk about?</label><textarea id="q2"></textarea></div>
+      <div><label for="q3">Prayer requests</label><textarea id="q3"></textarea></div>
+      <button type="button" id="copy">Copy my answers</button>
+      <p class="status" id="status" role="status" aria-live="polite">Then paste them into a text to Mario.</p>
+    </form>
+  </section>
+  <section class="block" aria-labelledby="r-h">
+    <h2 id="r-h">Go deeper</h2>
+    <p class="sub">For anyone who wants more background.</p>
+    <ul class="refs">
+<li><a href="https://www.biblegateway.com/passage/?search=Philippians+2%3A1-11&amp;version=KJV" target="_blank" rel="noopener">Philippians 2:1–11 on Bible Gateway ↗</a><span>Read the full passage in KJV, NIV, ESV, and other translations.</span></li>
+<li><a href="https://www.blueletterbible.org/lexicon/g5012/kjv/tr/0-1/" target="_blank" rel="noopener">Lowliness of mind in the Greek, Blue Letter Bible ↗</a><span>The word Paul uses in verse 3 and where else it appears.</span></li>
+<li><a href="https://www.blueletterbible.org/lexicon/g2758/kjv/tr/0-1/" target="_blank" rel="noopener">Made of no reputation in the Greek, Blue Letter Bible ↗</a><span>The verb behind verse 7.</span></li>
+<li><a href="https://www.blueletterbible.org/lexicon/g1401/kjv/tr/0-1/" target="_blank" rel="noopener">Servant in the Greek, Blue Letter Bible ↗</a><span>The word for servant in verse 7.</span></li>
+<li><a href="https://www.cambridge.org/core/books/reconstructing-honor-in-roman-philippi/summary-and-conclusion/E705BA3AA1793F7598C89D25765853F1" target="_blank" rel="noopener">Reconstructing Honor in Roman Philippi, Cambridge University Press ↗</a><span>Joseph Hellerman on rank and honor in Philippi and how it shapes this passage.</span></li>
+    </ul>
+  </section>
+  <footer>Peace and fire. See you Friday.</footer>
+  <p style="text-align:center;margin:18px 0 0;font-size:15px;font-weight:600"><a href="commentary/">Commentary</a> · <a href="notes/">Class notes</a> · <a href="../">All studies</a></p>
+</main>
+<script>
+const QS=[["q1","What stands out"],["q2","Want to talk about"],["q3","Prayer requests"]];
+const $=id=>document.getElementById(id);
+const statusEl=$("status");
+const KEY="fw-draft-philippians-2";
+try{const d=JSON.parse(localStorage.getItem(KEY)||"null");if(d)for(const k in d)if($(k))$(k).value=d[k];}catch(e){}
+function draft(){const d={name:$("name").value};QS.forEach(([k])=>d[k]=$(k).value);try{localStorage.setItem(KEY,JSON.stringify(d));}catch(e){}return d;}
+$("form").addEventListener("input",draft);
+function asText(d){let t="Thoughts for Friday"+(d.name.trim()?" ("+d.name.trim()+")":"")+"\n\n";QS.forEach(([k,l])=>{if(d[k].trim())t+=l+":\n"+d[k].trim()+"\n\n";});return t.trim();}
+function say(m,ok){statusEl.textContent=m;statusEl.className="status"+(ok?" ok":"");}
+$("copy").addEventListener("click",()=>{
+  const d=draft();
+  if(!QS.some(([k])=>d[k].trim())){say("Add a thought or two first.");return;}
+  const t=asText(d);
+  const done=()=>say("Copied. Paste it into a text to Mario.",true);
+  const fallback=()=>{
+    const ta=document.createElement("textarea");ta.value=t;ta.style.position="fixed";ta.style.opacity="0";document.body.appendChild(ta);ta.select();
+    try{document.execCommand("copy");done();}catch(e){say("Couldn't copy. Select your answers and copy them by hand.");}
+    ta.remove();
+  };
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(done).catch(fallback);}else{fallback();}
+});
+</script>
+<script>
+const page=document.body, modeLabel=document.getElementById('mode-label'), studyMode=document.getElementById('study-mode'), teacherMode=document.getElementById('teacher-mode'), themeMode=document.getElementById('theme-mode');
+function setMode(mode){page.classList.toggle('teacher',mode==='teacher');modeLabel.textContent=mode==='teacher'?'Teacher mode':'Study mode';studyMode.classList.toggle('active',mode==='study');teacherMode.classList.toggle('active',mode==='teacher');localStorage.setItem('study-mode',mode)}
+const savedMode=localStorage.getItem('study-mode')||'study';setMode(savedMode);studyMode.onclick=()=>setMode('study');teacherMode.onclick=()=>setMode('teacher');
+const savedTheme=localStorage.getItem('theme');if(savedTheme)document.documentElement.dataset.theme=savedTheme;themeMode.onclick=()=>{const dark=document.documentElement.dataset.theme==='dark';document.documentElement.dataset.theme=dark?'light':'dark';localStorage.setItem('theme',document.documentElement.dataset.theme)};
+</script>
+</body>
+</html>
